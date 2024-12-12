@@ -13,7 +13,8 @@ module.exports = {
     },
     fontFamily: {
       primary: 'Montserrat Alternates',
-      secondary : 'Jost'
+      secondary : 'Jost',
+      alternate : 'Cinzel'
     },    
     extend: {
       colors: {
