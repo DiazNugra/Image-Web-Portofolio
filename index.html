@@ -12,8 +12,8 @@
     />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="src/swiper-bundle.min.css" />
@@ -30,7 +30,7 @@
       <!-- Hero Section START -->
       <section
         id="hero"
-        class="hero h-[840px] bg-heroMobile bg-cover bg-center bg-no-repeat md:bg-heroMain md:block z-20 md:bg-top"
+        class="hero h-[900px] lg:h-lvh bg-heroMobile bg-fixed bg-cover bg-center bg-no-repeat md:bg-heroMain md:block z-20 md:bg-top"
       >
         <div class="hero__text text-2xl items-center text-center">
           <h1
@@ -39,209 +39,257 @@
             Diaz nugraha
           </h1>
 
+          <!-- side icon -->
           <div
-            class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-50"
+            class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-20"
           >
-            <!-- Instagram Icon -->
+            <div class="h-32 w-0.5 bg-white mx-auto"></div>
+
             <a
               href="https://www.instagram.com/diazmnugraha/"
               target="blank"
               class="block text-white hover:text-accent"
             >
-              <i class="ri-instagram-line text-2xl md:text-4xl"></i>
+              <i class="ri-instagram-line text-2xl md:text-3xl"></i>
             </a>
-            <!-- Facebook Icon -->
-            <a href="#hero" class="block text-white hover:text-accent">
-              <i class="ri-facebook-circle-line text-2xl md:text-4xl"></i>
+
+            <a href="https://www.instagram.com/diazmnugraha/" 
+               target="blank" 
+               class="block text-white hover:text-accent"
+               >
+              <i class="ri-facebook-circle-line text-2xl md:text-3xl"></i>
             </a>
-            <!-- WhatsApp Icon -->
-            <a href="#hero" class="block text-white hover:text-accent">
-              <i class="ri-whatsapp-line text-2xl md:text-4xl"></i>
+
+            <a href="https://www.instagram.com/diazmnugraha/" 
+               target="blank"
+               class="block text-white hover:text-accent"
+               >
+              <i class="ri-whatsapp-line text-2xl md:text-3xl"></i>
             </a>
-            <!-- Twitter Icon -->
-            <a href="#hero" class="block text-white hover:text-accent">
-              <i class="ri-twitter-x-line text-2xl md:text-4xl"></i>
+
+            <a href="https://www.instagram.com/diazmnugraha/"
+               target="blank"
+               class="block text-white hover:text-accent"
+               >
+              <i class="ri-twitter-x-line text-2xl md:text-3xl"></i>
             </a>
+
+            <div class="h-32 w-0.5 bg-white mx-auto"></div>
           </div>
+          <!-- end side icon -->
         </div>
       </section>
-    <!-- Hero Section END -->
+      <!-- Hero Section END -->
 
+      <!-- <div class="absolute inset-x-0 bottom-[-220px] lg:bottom-[-120px] h-20 bg-gradient-to-b from-transparent to-black backdrop-blur-lg"></div> -->
+      <div class="h-1 w-full bg-white mx-auto"></div>
 
-      <section id="about" class="bg-black mt-8 pt-10">
-        <div
-          class="max-w-sm lg:max-w-screen-lg rounded-r-3xl overflow-hidden shadow-lg mx-auto lg:bg-none mt-10"
-        >
-          <img
-            src="dist/img/diaz.jpg"
-            alt="diaz"
-            class="mt-10mb-10 max-w-72 mx-auto rounded-lg hidden lg:block"
-          />
+      <section id="about" class="bg-black mt-8 pt-10">        
+
+        <div class="p-4">          
           <img
             src="dist/img/diaz.jpg"
             alt="diaz"
             class="mt-10 max-w-64 mx-auto rounded-lg lg:hidden shadow-xl border-solid border-2 border-white"
           />
-
-          <div class="px-6 py-4">
-            <div
-              class="font-primary text-center text-4xl font-semibold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-            >
-              Hello! I'm Diaz!
-            </div>
-            <p class="text-white font-secondary text-center mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-              quasi veniam distinctio voluptas rerum tempora ipsum voluptatibus
-              accusantium ad quaerat incidunt cum animi et vitae consectetur
-              error esse? Sunt, repudiandae!
-            </p>
-          </div>
         </div>
 
+        <div
+          class="max-w-sm lg:max-w-screen-lg overflow-hidden mx-auto lg:bg-none p-6 flex"
+        >          
+          <div class="p-4 font-primary flex lg:items-center lg:justify-center lg:bg-gradient-to-r from-slate-500 to-transparent lg:rounded-l-3xl">               
+               <p class="text-center lg:text-end text-white"><span class="text-4xl font-semibold lg:leading-loose underline">Hello, i'm Diaz!</span><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, consequuntur? Error et tenetur illum maiores sit sed deleniti inventore ut!</p>
+          </div>
+          <img
+              src="dist/img/diaz.jpg"
+              alt="diaz"
+              class="mt-10mb-10 max-w-72 mx-auto rounded-lg hidden lg:block"
+            />
+        </div>
+      
         <div class="bg-black py-5 px-7 mt-20 mb-10">
           <div class="flex flex-wrap justify-center gap-4">
             <!-- Image Card -->
             <div
-              class="w-48 lg:w-60 transform rotate-[-10deg] overflow-hidden rounded-lg shadow-lg z-50"
+              class="z-10"
             >
               <img
-                loading="lazy"
                 src="dist/img/gallery/rem-13.jpg"
                 alt="Gallery Image 1"
-                class="transform transition-transform duration-300 hover:scale-110"
+                class="w-48 lg:w-64 rotate-[-10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
+
             <div
-              class="w-48 lg:w-60 transform rotate-[10deg] overflow-hidden rounded-lg shadow-lg z-50"
+              class="z-10"
             >
               <img
                 src="dist/img/gallery/nero-8.jpg"
-                alt="Gallery Image 2"
-                class="transform transition-transform duration-300 hover:scale-110"
+                alt="Gallery Image 1"
+                class="w-48 lg:w-64 rotate-[10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
+
             <div
-              class="w-48 lg:w-60 transform rotate-[-10deg] lg:rotate-[-10deg] overflow-hidden rounded-lg shadow-lg z-50"
+              class="z-10"
             >
               <img
                 src="dist/img/gallery/belle-3.jpg"
-                alt="Gallery Image 3"
-                class="transform transition-transform duration-300 hover:scale-110"
+                alt="Gallery Image 1"
+                class="w-48 lg:w-64 rotate-[-10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
+
             <div
-              class="w-48 lg:w-60 transform rotate-[10deg] lg:rotate-[10deg] overflow-hidden rounded-lg shadow-lg z-50"
+              class="z-10"
             >
               <img
                 src="dist/img/gallery/kobo-11.jpg"
-                alt="Gallery Image 4"
-                class="transform transition-transform duration-300 hover:scale-110"
+                alt="Gallery Image 1"
+                class="w-48 lg:w-64 rotate-[10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
+            
           </div>
         </div>
       </div>
       </section>
 
+      <!-- <div class="h-2 w-full bg-white mx-auto"></div> -->
+
+      <!-- Photo gallery section start -->
       <section id="photo_gallery">
         <div class="p-5 md:p-16">
-          <div class="hero__text text-2xl items-center text-center">
+          <!-- section title -->
+          <div class="hero__text text-2xl lg:text-4xl items-center text-center">
             <h1 class="text-white mb-5">Photo Gallery</h1>
           </div>
+
+          <!-- masonry grid setup -->
           <div
             class="columns-1 sm:columns-2 lg:columns-3 xl:columns-5 gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
           >
-            <img
+          <div class="flex flex-wrap justify-center gap-4">
+            <!-- Image Card -->
+            <div
+              class="z-10 gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8 cursor-pointer"
+            >
+              <!-- first column on LG -->
+              <img
               loading="eager"
               src="dist/img/main-gallery/ganyu-12.jpg"
               alt=""
+              class="transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/seta-28.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/sparkle-1.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
-
+  
+            <!-- second column on LG -->
             <img
               loading="eager"
               src="dist/img/main-gallery/pompom-5.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/maid-15.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/kobo-4.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
-
+  
+            <!-- Third column on LG -->
             <img
               loading="eager"
               src="dist/img/main-gallery/d.va-8.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/aurel-20.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/shikomori-4.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
-
+  
+            <!-- Fourth column on LG -->
             <img
               loading="eager"
               src="dist/img/main-gallery/biboo-3.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/maid-6.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/yoimiya-7.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
-
+  
+            <!-- Fifth column on LG -->
             <img
               loading="eager"
               src="dist/img/main-gallery/esdeath-3.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/zeela-10.jpg"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
               loading="eager"
               src="dist/img/main-gallery/violet-2-dreamy.png"
               alt=""
+              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
-          </div>
+
+            </div>
+          </div>              
+        </div>
         </div>
       </section>
+      <!-- Photo gallery section End -->
 
       <!-- Footer Section Start -->
        <section id="Footer">
-        <div class="h-[80px] bg-gradient-to-t from-primary to-black ">
+        <div class="h-[60px] bg-gradient-to-t from-primary to-black ">
           <div class="px-6 py-4">
             <div
-              class="font-secondary text-center text-sm font-thin text-white mb-20"
+              class="font-secondary text-center text-sm font-light text-white mb-2"
             >
-            <i class="ri-copyright-fill"></i> Copyright Diaz Maulidzan Nugraha 2024
+            <i class="ri-copyright-line"></i> Copyright Diaz Maulidzan Nugraha 2024
           </div>
         </div>
        </section>
