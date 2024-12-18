@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,33 +17,44 @@
     <title>Document</title>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="src/swiper-bundle.min.css" />
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="bg-black">
     <!-- page wrapper -->
     <main class="min-h-[1920px] mx-auto overflow-hidden">
       <!-- grid -->
-      <div
-        class="xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      <div 
+        class="xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0"
       ></div>
 
       <!-- Hero Section START -->
       <section
-        id="hero"
+        id="hero"        
         class="hero h-[900px] lg:h-lvh bg-heroMobile bg-fixed bg-cover bg-center bg-no-repeat md:bg-heroMain md:block z-20 md:bg-top"
       >
-        <div class="hero__text text-2xl items-center text-center">
-          <h1
-            class="text-white lg:text-4xl font-semibold tracking-wider md:tracking-[.50em] translate-y-4"
+        <div class="hero__text text-2xl inset-0 flex justify-center">
+          <h1 data-aos="flip-down" data-aos-delay="100"
+            class="text-center text-white lg:text-4xl font-semibold tracking-wider md:tracking-[.50em] translate-y-4 pt-4 lg:pt-6"
           >
             Diaz nugraha
           </h1>
 
+          <div class="hidden lg:block h-3/4 w-0.5 bg-white mx-auto fixed top-1/2 left-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>
+          
           <!-- side icon -->
-          <div
+          <div 
             class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-20"
           >
-            <div class="h-32 w-0.5 bg-white mx-auto"></div>
+            <div class="h-36 w-0.5 bg-white mx-auto"></div>
+
+            <a
+              href="#"
+              class="block text-white hover:text-accent"
+            >
+              <i class="ri-home-line text-2xl md:text-3xl"></i>
+            </a>
 
             <a
               href="https://www.instagram.com/diazmnugraha/"
@@ -53,99 +64,116 @@
               <i class="ri-instagram-line text-2xl md:text-3xl"></i>
             </a>
 
-            <a href="https://www.instagram.com/diazmnugraha/" 
+            <a
+               href="https://www.facebook.com/diaz.mnugraha" 
                target="blank" 
                class="block text-white hover:text-accent"
                >
               <i class="ri-facebook-circle-line text-2xl md:text-3xl"></i>
             </a>
 
-            <a href="https://www.instagram.com/diazmnugraha/" 
-               target="blank"
+            <a
+               href="#" 
+               
                class="block text-white hover:text-accent"
                >
               <i class="ri-whatsapp-line text-2xl md:text-3xl"></i>
             </a>
 
-            <a href="https://www.instagram.com/diazmnugraha/"
+            <a
+               href="https://x.com/nugraha_912"
                target="blank"
                class="block text-white hover:text-accent"
                >
               <i class="ri-twitter-x-line text-2xl md:text-3xl"></i>
             </a>
+            <div class="h-36 w-0.5 bg-white mx-auto"></div>        
+          </div>     
+          
+          <!-- <div class="absolute bottom-14 left-6">
+            <h1 class="text-white text-xs bg-slate-700 p-2 rounded-md">
+              <i class="ri-compass-3-line text-xs"></i> 7° 19′ 32.89″ S, 108° 13′ 12.65″ E
+            </h1>
+          </div> -->
 
-            <div class="h-32 w-0.5 bg-white mx-auto"></div>
-          </div>
           <!-- end side icon -->
-        </div>
+        </div>        
       </section>
       <!-- Hero Section END -->
 
-      <!-- <div class="absolute inset-x-0 bottom-[-220px] lg:bottom-[-120px] h-20 bg-gradient-to-b from-transparent to-black backdrop-blur-lg"></div> -->
+      <!-- <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/40 to-transparent backdrop-blur-sm"></div> -->
+      <!-- <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-black backdrop-blur-lg"></div> -->
       <div class="h-1 w-full bg-white mx-auto"></div>
 
       <section id="about" class="bg-black mt-8 pt-10">        
 
-        <div class="p-4">          
+        <div class="p-4 lg:hidden">          
           <img
-            src="dist/img/diaz.jpg"
+            src="https://i.ibb.co.com/TwXfb67/diaz.jpg"
             alt="diaz"
-            class="mt-10 max-w-64 mx-auto rounded-lg lg:hidden shadow-xl border-solid border-2 border-white"
+            class="mt-10 max-w-64 rounded-t-full rounded-b-xl mx-auto rounded-lg shadow-xl border-solid border-2 border-white"
           />
         </div>
 
-        <div
-          class="max-w-sm lg:max-w-screen-lg overflow-hidden mx-auto lg:bg-none p-6 flex"
-        >          
-          <div class="p-4 font-primary flex lg:items-center lg:justify-center lg:bg-gradient-to-r from-slate-500 to-transparent lg:rounded-l-3xl">               
-               <p class="text-center lg:text-end text-white"><span class="text-4xl font-semibold lg:leading-loose underline">Hello, i'm Diaz!</span><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, consequuntur? Error et tenetur illum maiores sit sed deleniti inventore ut!</p>
+          <div
+            class="max-w-sm lg:max-w-screen-lg overflow-hidden mx-auto lg:bg-none flex"
+          >          
+            <div  class="p-4 font-primary flex lg:items-center lg:justify-center  lg:rounded-l-3xl">               
+                 <p class="p-4 lg:p-8 rounded-3xl transform transition-transform duration-300 lg:bg-gradient-to-r from-slate-600 to-transparent hover:text-black hover:bg-white text-center lg:text-end text-white"><span class="text-4xl  font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum repudiandae provident commodi aspernatur sint?
+                 </p>
+            </div>
+            <div class="">
+              <img
+                  src="https://i.ibb.co.com/TwXfb67/diaz.jpg"
+                  alt="diaz"  
+                  class="hidden lg:block max-w-72 rounded-t-full rounded-b-xl border-solid border-2 border-white shadow-lg"
+                />
+            </div>
           </div>
-          <img
-              src="dist/img/diaz.jpg"
-              alt="diaz"
-              class="mt-10mb-10 max-w-72 mx-auto rounded-lg hidden lg:block"
-            />
-        </div>
       
         <div class="bg-black py-5 px-7 mt-20 mb-10">
           <div class="flex flex-wrap justify-center gap-4">
             <!-- Image Card -->
             <div
-              class="z-10"
+              class=""
             >
               <img
-                src="dist/img/gallery/rem-13.jpg"
+                loading="lazy"
+                src="https://i.ibb.co.com/dpHcvLn/rem-13.jpg"
                 alt="Gallery Image 1"
                 class="w-48 lg:w-64 rotate-[-10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
 
             <div
-              class="z-10"
+              class=""
             >
               <img
-                src="dist/img/gallery/nero-8.jpg"
+                loading="lazy"
+                src="https://i.ibb.co.com/dkGWmCh/nero-8.jpg"
                 alt="Gallery Image 1"
                 class="w-48 lg:w-64 rotate-[10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
 
             <div
-              class="z-10"
+              class=""
             >
               <img
-                src="dist/img/gallery/belle-3.jpg"
+                loading="lazy"
+                src="https://i.ibb.co.com/1MMkPfz/belle-3.jpg"
                 alt="Gallery Image 1"
                 class="w-48 lg:w-64 rotate-[-10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
             </div>
 
             <div
-              class="z-10"
+              class=""
             >
               <img
-                src="dist/img/gallery/kobo-11.jpg"
+                loading="lazy"
+                src="https://i.ibb.co.com/grpnNkL/kobo-11.jpg"
                 alt="Gallery Image 1"
                 class="w-48 lg:w-64 rotate-[10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
               />
@@ -168,112 +196,112 @@
 
           <!-- masonry grid setup -->
           <div
-            class="columns-1 sm:columns-2 lg:columns-3 xl:columns-5 gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
+            class="columns-2 sm:columns-2 lg:columns-3 xl:columns-5 gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
           >
           <div class="flex flex-wrap justify-center gap-4">
             <!-- Image Card -->
             <div
-              class="z-10 gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8 cursor-pointer"
+              class="gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
             >
               <!-- first column on LG -->
-              <img
-              loading="eager"
-              src="dist/img/main-gallery/ganyu-12.jpg"
+            <img
+              loading="lazy"
+              src="https://i.ibb.co.com/MZTvHJm/ganyu-12.jpg"
               alt=""
               class="transform transition-transform duration-300 hover:scale-125"
             />
             <img
-              loading="eager"
-              src="dist/img/main-gallery/seta-28.jpg"
+              loading="lazy"
+              src="https://i.ibb.co.com/JczMjQ6/seta-28.jpg"
               alt=""
               class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
-              loading="eager"
-              src="dist/img/main-gallery/sparkle-1.jpg"
+              loading="lazy"
+              src="https://i.ibb.co.com/kKVXHxX/sparkle-1.jpg"
               alt=""
               class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
   
             <!-- second column on LG -->
             <img
-              loading="eager"
-              src="dist/img/main-gallery/pompom-5.jpg"
+              loading="lazy"
+              src="https://i.ibb.co.com/P4NSRHv/pompom-5.jpg"
+              alt=""
+              class="transform transition-transform duration-300 hover:scale-125"
+            />
+            <img
+              loading="lazy"
+              src="https://i.ibb.co.com/Q8jgSPd/maid-15.png"
               alt=""
               class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
             <img
-              loading="eager"
-              src="dist/img/main-gallery/maid-15.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/kobo-4.jpg"
+              loading="lazy"
+              src="https://i.ibb.co.com/tK9WzW9/kobo-4.jpg"
               alt=""
               class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
             />
   
             <!-- Third column on LG -->
             <img
-              loading="eager"
-              src="dist/img/main-gallery/d.va-8.jpg"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/aurel-20.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/shikomori-4.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
+            loading="lazy"
+            src="https://i.ibb.co.com/HHCdD15/d-va-8.jpg"
+            alt=""
+            class="transform transition-transform duration-300 hover:scale-125"
+          />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/HqFwNMV/aurel-20.png"
+            alt=""
+            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
+          />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/kqnHMG8/shikomori-4.png"
+            alt=""
+            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
+          />
   
             <!-- Fourth column on LG -->
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/biboo-3.jpg"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/maid-6.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/yoimiya-7.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/Zd4pyKM/biboo-3.jpg"
+            alt=""
+            class="transform transition-transform duration-300 hover:scale-125"
+          />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/7jZSQD9/maid-6.png"
+            alt=""
+            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
+          />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/9hKWRLY/yoimiya-7.png"
+            alt=""
+            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
+          />
   
             <!-- Fifth column on LG -->
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/esdeath-3.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/zeela-10.jpg"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="eager"
-              src="dist/img/main-gallery/violet-2-dreamy.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/mG6mWTL/esdeath-3.png"
+            alt=""
+            class="transform transition-transform duration-300 hover:scale-125"
+          />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/1MWqRh5/zeela-10.jpg"
+            alt=""
+            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
+          />
+          <img
+            loading="lazy"
+            src="https://i.ibb.co.com/BK9Wm60/violet-2-dreamy.png"
+            alt=""
+            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
+          />
 
             </div>
           </div>              
@@ -303,5 +331,10 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- main js file -->
     <script src="js/main.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

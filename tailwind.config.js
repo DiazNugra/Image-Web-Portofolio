@@ -30,8 +30,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        heroMain: 'url(/dist/img/hero-main.png)',
-        heroMobile : 'url(/dist/img/hero-mobile.png)',
+        heroMain: 'url(https://i.ibb.co.com/2YPTKmx/hero-main.png)',
+        heroMobile : 'url(https://i.ibb.co.com/pP7HFwN/hero-mobile.png)',
       },
     },
   },
