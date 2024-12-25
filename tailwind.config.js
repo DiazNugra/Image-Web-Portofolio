@@ -30,8 +30,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        heroMain: 'url(https://i.ibb.co.com/2YPTKmx/hero-main.png)',
-        heroMobile : 'url(https://i.ibb.co.com/pP7HFwN/hero-mobile.png)',
+        heroMain: 'url(https://i.ibb.co.com/8YGcZ4b/Topaz-4-screen.jpg)',
+        heroMobile : 'url(https://i.ibb.co.com/dt7v2g2/Topaz-22.jpg)',
       },
     },
   },

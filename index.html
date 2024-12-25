@@ -15,10 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="src/swiper-bundle.min.css" />
+
     <!-- Animate on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
+    
   </head>
 
   <body class="bg-black">
@@ -32,7 +37,7 @@
       <!-- Hero Section START -->
       <section
         id="hero"        
-        class="hero h-[900px] lg:h-lvh bg-heroMobile bg-fixed bg-cover bg-center bg-no-repeat md:bg-heroMain md:block z-20 md:bg-top"
+        class="hero h-[900px] lg:h-lvh bg-heroMobile bg-center bg-cover bg-no-repeat md:bg-heroMain md:block z-20 md:bg-bottom"
       >
         <div class="hero__text text-2xl inset-0 flex justify-center">
           <h1 data-aos="flip-down" data-aos-delay="100"
@@ -42,12 +47,13 @@
           </h1>
 
           <div class="hidden lg:block h-3/4 w-0.5 bg-white mx-auto fixed top-1/2 left-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>
+          <div class="hidden lg:block h-3/6 w-0.5 bg-white mx-auto fixed top-1/2 left-6 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>          
           
           <!-- side icon -->
           <div 
             class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-20"
           >
-            <div class="h-36 w-0.5 bg-white mx-auto"></div>
+            <div class="h-36 w-0.5 bg-white mx-auto"></div>            
 
             <a
               href="#"
@@ -87,7 +93,7 @@
                >
               <i class="ri-twitter-x-line text-2xl md:text-3xl"></i>
             </a>
-            <div class="h-36 w-0.5 bg-white mx-auto"></div>        
+            <div class="h-36 w-0.5 bg-white mx-auto"></div>       
           </div>     
           
           <!-- <div class="absolute bottom-14 left-6">
@@ -109,25 +115,25 @@
 
         <div class="p-4 lg:hidden">          
           <img
-            src="https://i.ibb.co.com/TwXfb67/diaz.jpg"
+            src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
             alt="diaz"
-            class="mt-10 max-w-64 rounded-t-full rounded-b-xl mx-auto rounded-lg shadow-xl border-solid border-2 border-white"
+            class="mt-10 max-w-64 mx-auto rounded-lg shadow-xl border-solid border-2 border-white"
           />
         </div>
 
           <div
-            class="max-w-sm lg:max-w-screen-lg overflow-hidden mx-auto lg:bg-none flex"
+            class="max-w-sm lg:max-w-screen-lg overflow-hidden mx-auto flex"
           >          
-            <div  class="p-4 font-primary flex lg:items-center lg:justify-center  lg:rounded-l-3xl">               
+            <div class="p-4 max-w-1/2 font-primary flex lg:items-center lg:justify-center  lg:rounded-l-3xl"> 
                  <p class="p-4 lg:p-8 rounded-3xl transform transition-transform duration-300 lg:bg-gradient-to-r from-slate-600 to-transparent hover:text-black hover:bg-white text-center lg:text-end text-white"><span class="text-4xl  font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum repudiandae provident commodi aspernatur sint?
                  </p>
             </div>
             <div class="">
               <img
-                  src="https://i.ibb.co.com/TwXfb67/diaz.jpg"
+                  src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
                   alt="diaz"  
-                  class="hidden lg:block max-w-72 rounded-t-full rounded-b-xl border-solid border-2 border-white shadow-lg"
+                  class="hidden lg:block rounded-lg max-w-72 border-solid border-2 border-white shadow-lg"
                 />
             </div>
           </div>
