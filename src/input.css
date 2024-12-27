@@ -42,3 +42,10 @@ h6 {
 .btn-accent {
   @apply bg-accent hover:bg-accent-hover;
 }
+
+.flex:hover .group img {
+  transform: scale(0.8);
+}
+.flex:hover .group:hover img {
+  transform: scale(1.2);
+}

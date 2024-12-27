@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Catto Showcase</title>
+    <link rel="icon" type="x-icon" href="dist/img/catto-logo-2.ico">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="src/swiper-bundle.min.css" />
@@ -59,7 +60,7 @@
               href="#"
               class="block text-white hover:text-accent"
             >
-              <i class="ri-home-line text-2xl md:text-3xl"></i>
+              <i class="ri-home-2-line text-2xl md:text-3xl"></i>
             </a>
 
             <a
@@ -112,79 +113,38 @@
       <div class="h-1 w-full bg-white mx-auto"></div>
 
       <section id="about" class="bg-black mt-8 pt-10">        
-
-        <div class="p-4 lg:hidden">          
+        <div class="min-h-lvh">
+        <div class="p-4 z-10 ">          
           <img
             src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
             alt="diaz"
             class="mt-10 max-w-64 mx-auto rounded-lg shadow-xl border-solid border-2 border-white"
           />
         </div>
-
           <div
-            class="max-w-sm lg:max-w-screen-lg overflow-hidden mx-auto flex"
+            class="max-w-full overflow-hidden mx-auto flex z-10"
           >          
-            <div class="p-4 max-w-1/2 font-primary flex lg:items-center lg:justify-center  lg:rounded-l-3xl"> 
-                 <p class="p-4 lg:p-8 rounded-3xl transform transition-transform duration-300 lg:bg-gradient-to-r from-slate-600 to-transparent hover:text-black hover:bg-white text-center lg:text-end text-white"><span class="text-4xl  font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum repudiandae provident commodi aspernatur sint?
+            <div class="max-w-full font-primary"> 
+                 <p class="leading-10 p-14 lg:p-10 transform transition-transform duration-300 
+                           lg:bg-gradient-to-t from-slate-600 to-transparent
+                           text-center text-white"><span class="text-4xl  font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
+                  I’m a tech-savvy creative skilled in frontend web development and UI/UX design, using tools like React, Node.js, PHP, Tailwind, and Bootstrap to build functional and visually engaging websites.  
+                  
+                  Beyond coding, I’m passionate about photography and able to operate tools related to photography and editing tools such as Lightroom, Photoshop, and Illustrator, blending technical expertise with artistic vision to deliver impactful results.
                  </p>
-            </div>
-            <div class="">
-              <img
-                  src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
-                  alt="diaz"  
-                  class="hidden lg:block rounded-lg max-w-72 border-solid border-2 border-white shadow-lg"
-                />
-            </div>
+            </div>            
           </div>
-      
-        <div class="bg-black py-5 px-7 mt-20 mb-10">
-          <div class="flex flex-wrap justify-center gap-4">
+          
+          <div class="h-1 w-full bg-white mx-auto"></div>
+
+        <div class="p-6 my-12 z-10">
+          <div class="flex flex-wrap justify-center">
             <!-- Image Card -->
             <div
-              class=""
+              id="intro-container"
+              class="flex flex-wrap justify-center gap-4 md:gap-12"
             >
-              <img
-                loading="lazy"
-                src="https://i.ibb.co.com/dpHcvLn/rem-13.jpg"
-                alt="Gallery Image 1"
-                class="w-48 lg:w-64 rotate-[-10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
-              />
             </div>
-
-            <div
-              class=""
-            >
-              <img
-                loading="lazy"
-                src="https://i.ibb.co.com/dkGWmCh/nero-8.jpg"
-                alt="Gallery Image 1"
-                class="w-48 lg:w-64 rotate-[10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
-              />
-            </div>
-
-            <div
-              class=""
-            >
-              <img
-                loading="lazy"
-                src="https://i.ibb.co.com/1MMkPfz/belle-3.jpg"
-                alt="Gallery Image 1"
-                class="w-48 lg:w-64 rotate-[-10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
-              />
-            </div>
-
-            <div
-              class=""
-            >
-              <img
-                loading="lazy"
-                src="https://i.ibb.co.com/grpnNkL/kobo-11.jpg"
-                alt="Gallery Image 1"
-                class="w-48 lg:w-64 rotate-[10deg] overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125"
-              />
-            </div>
-            
           </div>
         </div>
       </div>
@@ -194,7 +154,7 @@
 
       <!-- Photo gallery section start -->
       <section id="photo_gallery">
-        <div class="p-5 md:p-16">
+        <div class="px-5 md:px-16 z-10">
           <!-- section title -->
           <div class="hero__text text-2xl lg:text-4xl items-center text-center">
             <h1 class="text-white mb-5">Photo Gallery</h1>
@@ -202,130 +162,27 @@
 
           <!-- masonry grid setup -->
           <div
-            class="columns-2 sm:columns-2 lg:columns-3 xl:columns-5 gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
+            class="columns-2 sm:columns-2 lg:columns-3 xl:columns-5"
           >
-          <div class="flex flex-wrap justify-center gap-4">
             <!-- Image Card -->
-            <div
+            <div 
+              id="image-container"
               class="gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
-            >
-              <!-- first column on LG -->
-            <img
-              loading="lazy"
-              src="https://i.ibb.co.com/MZTvHJm/ganyu-12.jpg"
-              alt=""
-              class="transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="lazy"
-              src="https://i.ibb.co.com/JczMjQ6/seta-28.jpg"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="lazy"
-              src="https://i.ibb.co.com/kKVXHxX/sparkle-1.jpg"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-  
-            <!-- second column on LG -->
-            <img
-              loading="lazy"
-              src="https://i.ibb.co.com/P4NSRHv/pompom-5.jpg"
-              alt=""
-              class="transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="lazy"
-              src="https://i.ibb.co.com/Q8jgSPd/maid-15.png"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-            <img
-              loading="lazy"
-              src="https://i.ibb.co.com/tK9WzW9/kobo-4.jpg"
-              alt=""
-              class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-            />
-  
-            <!-- Third column on LG -->
-            <img
-            loading="lazy"
-            src="https://i.ibb.co.com/HHCdD15/d-va-8.jpg"
-            alt=""
-            class="transform transition-transform duration-300 hover:scale-125"
-          />
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/HqFwNMV/aurel-20.png"
-            alt=""
-            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-          />
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/kqnHMG8/shikomori-4.png"
-            alt=""
-            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-          />
-  
-            <!-- Fourth column on LG -->
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/Zd4pyKM/biboo-3.jpg"
-            alt=""
-            class="transform transition-transform duration-300 hover:scale-125"
-          />
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/7jZSQD9/maid-6.png"
-            alt=""
-            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-          />
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/9hKWRLY/yoimiya-7.png"
-            alt=""
-            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-          />
-  
-            <!-- Fifth column on LG -->
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/mG6mWTL/esdeath-3.png"
-            alt=""
-            class="transform transition-transform duration-300 hover:scale-125"
-          />
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/1MWqRh5/zeela-10.jpg"
-            alt=""
-            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-          />
-          <img
-            loading="lazy"
-            src="https://i.ibb.co.com/BK9Wm60/violet-2-dreamy.png"
-            alt=""
-            class="overflow-hidden transform transition-transform duration-300 hover:scale-125"
-          />
-
-            </div>
-          </div>              
+            >        
+            </div>         
         </div>
-        </div>
+        </div>    
       </section>
       <!-- Photo gallery section End -->
-
+    
       <!-- Footer Section Start -->
        <section id="Footer">
-        <div class="h-[60px] bg-gradient-to-t from-primary to-black ">
-          <div class="px-6 py-4">
+         <div class="px-6 py-4 h-[60px] bg-gradient-to-t from-primary to-black ">
             <div
               class="font-secondary text-center text-sm font-light text-white mb-2"
             >
             <i class="ri-copyright-line"></i> Copyright Diaz Maulidzan Nugraha 2024
           </div>
-        </div>
        </section>
       <!-- Footer END -->
       
