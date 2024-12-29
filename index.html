@@ -38,7 +38,7 @@
       <!-- Hero Section START -->
       <section
         id="hero"        
-        class="hero h-[900px] lg:h-lvh bg-heroMobile bg-center bg-cover bg-no-repeat md:bg-heroMain md:block z-20 md:bg-bottom"
+        class="hero h-[900px] lg:h-lvh bg-heroMobile bg-center bg-cover bg-no-repeat md:bg-heroMain md:block z-20 md:bg-top"
       >
         <div class="hero__text text-2xl inset-0 flex justify-center">
           <h1 data-aos="flip-down" data-aos-delay="100"
@@ -46,13 +46,14 @@
           >
             Diaz nugraha
           </h1>
+          
 
           <div class="hidden lg:block h-3/4 w-0.5 bg-white mx-auto fixed top-1/2 left-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>
           <div class="hidden lg:block h-3/6 w-0.5 bg-white mx-auto fixed top-1/2 left-6 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>          
           
           <!-- side icon -->
           <div 
-            class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-20"
+            class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"
           >
             <div class="h-36 w-0.5 bg-white mx-auto"></div>            
 
@@ -112,30 +113,35 @@
       <!-- <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-black backdrop-blur-lg"></div> -->
       <div class="h-1 w-full bg-white mx-auto"></div>
 
-      <section id="about" class="bg-black mt-8 pt-10">        
-        <div class="min-h-lvh">
-        <div class="p-4 z-10 ">          
+      <section id="about" class="bg-black">        
+        <div class="p-4 z-10 min-h-96">
           <img
             src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
             alt="diaz"
-            class="mt-10 max-w-64 mx-auto rounded-lg shadow-xl border-solid border-2 border-white"
+            class="mt-10 max-w-64 mx-auto shadow-xl border-2 border-solid border-white rounded-2xl"
           />
         </div>
           <div
-            class="max-w-full overflow-hidden mx-auto flex z-10"
-          >          
-            <div class="max-w-full font-primary"> 
-                 <p class="leading-10 p-14 lg:p-10 transform transition-transform duration-300 
-                           lg:bg-gradient-to-t from-slate-600 to-transparent
+            class="max-w-full overflow-hidden mx-auto flex z-20"
+          >                            
+            <div class="max-w-full font-primary lg:bg-gradient-to-t from-slate-600 to-transparent mx-auto"> 
+                 <p class="leading-10 px-14 pt-6 pb-10 lg:px-10 lg:pt-5 lg:pb-14 transform transition-transform duration-300                       
                            text-center text-white"><span class="text-4xl  font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
                   I’m a tech-savvy creative skilled in frontend web development and UI/UX design, using tools like React, Node.js, PHP, Tailwind, and Bootstrap to build functional and visually engaging websites.  
                   
                   Beyond coding, I’m passionate about photography and able to operate tools related to photography and editing tools such as Lightroom, Photoshop, and Illustrator, blending technical expertise with artistic vision to deliver impactful results.
+                  <!-- <div class="flex items-center justify-center">                    
+                    <button class="mx-auto my-4 p-6 flex z-10 bg-black text-white hover:text-black font-semibold rounded-lg shadow-md hover:bg-white">
+                      Read More!
+                    </button>
+                  </div> -->
                  </p>
-            </div>            
-          </div>
-          
+            </div>   
+          </div>                                    
           <div class="h-1 w-full bg-white mx-auto"></div>
+
+          
+          
 
         <div class="p-6 my-12 z-10">
           <div class="flex flex-wrap justify-center">
@@ -144,7 +150,7 @@
               id="intro-container"
               class="flex flex-wrap justify-center gap-4 md:gap-12"
             >
-            </div>
+            </div>          
           </div>
         </div>
       </div>
@@ -154,7 +160,7 @@
 
       <!-- Photo gallery section start -->
       <section id="photo_gallery">
-        <div class="px-5 md:px-16 z-10">
+        <div class="px-5 md:px-16 mx-auto z-10">
           <!-- section title -->
           <div class="hero__text text-2xl lg:text-4xl items-center text-center">
             <h1 class="text-white mb-5">Photo Gallery</h1>

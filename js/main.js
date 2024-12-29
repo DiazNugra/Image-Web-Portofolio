@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'https://i.ibb.co.com/kKVXHxX/sparkle-1.jpg',
         'https://i.ibb.co.com/P4NSRHv/pompom-5.jpg',
         'https://i.ibb.co.com/Q8jgSPd/maid-15.png',
-        'https://i.ibb.co.com/tK9WzW9/kobo-4.jpg',
+        'https://i.ibb.co.com/KhJ3D3J/kobo-4.jpg',
         'https://i.ibb.co.com/HHCdD15/d-va-8.jpg',
         'https://i.ibb.co.com/HqFwNMV/aurel-20.png',
         'https://i.ibb.co.com/kqnHMG8/shikomori-4.png',
