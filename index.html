@@ -29,31 +29,19 @@
 
   <body class="bg-black">
     <!-- page wrapper -->
-    <main class="min-h-[1920px] mx-auto overflow-hidden">
-      <!-- grid -->
-      <div 
-        class="xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0"
-      ></div>
-
+    <main class="min-h-[1920px] overflow-hidden">      
       <!-- Hero Section START -->
       <section
         id="hero"        
-        class="hero h-[900px] lg:h-lvh bg-heroMobile bg-center bg-cover bg-no-repeat md:bg-heroMain md:block z-20 md:bg-top"
-      >
-        <div class="hero__text text-2xl inset-0 flex justify-center">
-          <h1 data-aos="flip-down" data-aos-delay="100"
-            class="text-center text-white lg:text-4xl font-semibold tracking-wider md:tracking-[.50em] translate-y-4 pt-4 lg:pt-6"
-          >
-            Diaz nugraha
-          </h1>
-          
-
-          <div class="hidden lg:block h-3/4 w-0.5 bg-white mx-auto fixed top-1/2 left-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>
-          <div class="hidden lg:block h-3/6 w-0.5 bg-white mx-auto fixed top-1/2 left-6 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"></div>          
-          
+        class="hero min-h-lvh bg-heroMobile lg:bg-none bg-center bg-cover bg-no-repeat md:block z-20 md:bg-top">
+        <div>        
+          <h1
+              class="absolute z-30 text-center left-1/2 transform -translate-x-1/2 text-slate-600 lg:text-4xl font-semibold tracking-wider md:tracking-[.50em] translate-y-4 motion-preset-slide-up-lg">
+              Diaz nugraha
+            </h1>
           <!-- side icon -->
           <div 
-            class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-10"
+            class="fixed top-1/2 right-4 transform -translate-y-1/2 space-y-2 md:space-y-4 z-40 motion-preset-slide-right-lg"
           >
             <div class="h-36 w-0.5 bg-white mx-auto"></div>            
 
@@ -96,24 +84,31 @@
               <i class="ri-twitter-x-line text-2xl md:text-3xl"></i>
             </a>
             <div class="h-36 w-0.5 bg-white mx-auto"></div>       
-          </div>     
-          
-          <!-- <div class="absolute bottom-14 left-6">
-            <h1 class="text-white text-xs bg-slate-700 p-2 rounded-md">
-              <i class="ri-compass-3-line text-xs"></i> 7° 19′ 32.89″ S, 108° 13′ 12.65″ E
-            </h1>
-          </div> -->
-
-          <!-- end side icon -->
-        </div>        
+          </div>
+          <!-- end side icon --> 
+        <div class="hidden lg:flex relative items-center justify-center max-h-screen min-h-screen overflow-hidden">
+          <div class="grid grid-cols-3">
+            <div class="">
+              <img src="https://i.ibb.co.com/vzfd395/left.jpg" class="" data-aos="fade-right" data-aos-delay="50" alt="">
+            </div>
+            <div class="transform rotate-3 scale-125">
+              <img src="https://i.ibb.co.com/4YCyKNB/middle.jpg" class="" data-aos="fade-down" data-aos-delay="50" alt="">
+            </div>
+            <div class="">
+              <img src="https://i.ibb.co.com/7JVMVgP/huohuo-58.jpg" class="" data-aos="fade-left" data-aos-delay="50" alt="">
+            </div>
+          </div>        
+        </div>
+      </div>
       </section>
       <!-- Hero Section END -->
 
-      <!-- <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/40 to-transparent backdrop-blur-sm"></div> -->
-      <!-- <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-black backdrop-blur-lg"></div> -->
-      <div class="h-1 w-full bg-white mx-auto"></div>
+      <!-- section separator start -->
+      <div class="absolute z-20 h-1 w-full bg-white mx-auto"></div>
+      <!-- section separator end -->
 
-      <section id="about" class="bg-black">        
+      <!-- section about start -->
+      <section id="about" class="bg-black mt-10" data-aos="fade-left" data-aos-delay="100">        
         <div class="p-4 z-10 min-h-96">
           <img
             src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
@@ -124,24 +119,16 @@
           <div
             class="max-w-full overflow-hidden mx-auto flex z-20"
           >                            
-            <div class="max-w-full font-primary lg:bg-gradient-to-t from-slate-600 to-transparent mx-auto"> 
-                 <p class="leading-10 px-14 pt-6 pb-10 lg:px-10 lg:pt-5 lg:pb-14 transform transition-transform duration-300                       
-                           text-center text-white"><span class="text-4xl  font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
+            <div class="max-w-full font-primary mx-auto "> 
+                 <p class="leading-10 px-14 pt-6 pb-10 lg:px-16 lg:pt-5 lg:pb-14 transform transition-transform duration-300                       
+                           text-center text-white"><span class="text-4xl font-semibold lg:leading-loose">Hello, i'm Diaz!</span><br>
                   I’m a tech-savvy creative skilled in frontend web development and UI/UX design, using tools like React, Node.js, PHP, Tailwind, and Bootstrap to build functional and visually engaging websites.  
                   
-                  Beyond coding, I’m passionate about photography and able to operate tools related to photography and editing tools such as Lightroom, Photoshop, and Illustrator, blending technical expertise with artistic vision to deliver impactful results.
-                  <!-- <div class="flex items-center justify-center">                    
-                    <button class="mx-auto my-4 p-6 flex z-10 bg-black text-white hover:text-black font-semibold rounded-lg shadow-md hover:bg-white">
-                      Read More!
-                    </button>
-                  </div> -->
-                 </p>
+                  Beyond Programming, I’m passionate about photography and able to operate tools related to photography and editing tools such as Lightroom, Photoshop, and Illustrator, blending technical expertise with artistic vision to deliver impactful results.                  
+                 </p>                 
             </div>   
           </div>                                    
-          <div class="h-1 w-full bg-white mx-auto"></div>
-
-          
-          
+          <!-- <div class="h-1 w-full bg-white mx-auto"></div>                   -->
 
         <div class="p-6 my-12 z-10">
           <div class="flex flex-wrap justify-center">
@@ -149,21 +136,24 @@
             <div
               id="intro-container"
               class="flex flex-wrap justify-center gap-4 md:gap-12"
+              data-aos="fade-left"
+              data-aos-delay="100"
             >
-            </div>          
+            </div>                      
           </div>
         </div>
       </div>
       </section>
+      <!-- about section end -->
 
       <!-- <div class="h-2 w-full bg-white mx-auto"></div> -->
 
       <!-- Photo gallery section start -->
       <section id="photo_gallery">
-        <div class="px-5 md:px-16 mx-auto z-10">
+        <div class="px-5 md:px-16 mx-auto z-10 mb-5">
           <!-- section title -->
           <div class="hero__text text-2xl lg:text-4xl items-center text-center">
-            <h1 class="text-white mb-5">Photo Gallery</h1>
+            <h1 class="text-white mb-5 -motion-translate-y-loop-50 motion-duration-[2s] motion-ease-spring-smooth">Photo Gallery</h1>
           </div>
 
           <!-- masonry grid setup -->
@@ -173,13 +163,62 @@
             <!-- Image Card -->
             <div 
               id="image-container"
-              class="gap-5 lg:gap-6 [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
+              class="gap-5 lg:gap-6 group: [&>img:not(:first-child)]:mt-5 md:[&>img:not(:first-child)]:mt-8"
             >        
             </div>         
         </div>
         </div>    
       </section>
       <!-- Photo gallery section End -->
+
+      <!-- recent work section start -->
+       <section id="recent">
+        <div class="min-h-lvh pt-4 pb-8 px-8">
+          <div class="hero__text text-2xl lg:text-4xl items-center text-center">
+            <h1 class="text-white mb-5">Recent Works</h1>
+          </div>
+
+          <div class="pt-6 flex flex-wrap items-center justify-center">
+            <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              
+              <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://i.ibb.co.com/hyZM856/Topaz-52.jpg" alt="recent">
+                <div class="absolute inset-0 flex items-end justify-start">
+                  <span class="bg-black bg-opacity-50 text-white text-xl font-bold px-3 py-2 w-full">
+                    <a href="#recent">
+                      Topaz (@_.zeeelaa) <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+    
+              <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://i.ibb.co.com/SVKCCWx/Tenten-19.jpg" alt="recent">
+                <div class="absolute inset-0 flex items-end justify-start">
+                  <span class="bg-black bg-opacity-50 text-white text-xl font-bold px-3 py-2 w-full">
+                    <a href="#recent">
+                      Tenten (@hyuukacz) <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+    
+              <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://i.ibb.co.com/RDsfLKX/huohuo-15.jpg" alt="recent">
+                <div class="absolute inset-0 flex items-end justify-start">
+                  <span class="bg-black bg-opacity-50 text-white text-xl font-bold px-3 py-2 w-full">
+                    <a href="#recent">
+                      Huouo (@adorabey) <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- recent work section end -->
     
       <!-- Footer Section Start -->
        <section id="Footer">

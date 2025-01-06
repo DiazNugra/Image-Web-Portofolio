@@ -33,11 +33,11 @@ module.exports = {
         },
       },
       backgroundImage: {
-        heroMain: 'url(https://i.ibb.co.com/K22SvgP/Topaz-74.jpg)',
-        heroMobile : 'url(https://i.ibb.co.com/n6CZ9hW/Topaz-22.jpg)',
+        heroMain: 'url(https://i.ibb.co.com/TL5LkT1/hero-large.jpg)',
+        heroMobile : 'url(https://i.ibb.co.com/Bcn5qrb/hero-mobile.jpg)',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')],
 }
 

@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "daisyui": "^4.12.22",
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-motion": "^1.0.0"
   },
   "dependencies": {
     "remixicon": "^4.6.0"
