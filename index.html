@@ -36,7 +36,7 @@
         class="hero min-h-lvh bg-heroMobile lg:bg-none bg-center bg-cover bg-no-repeat md:block z-20 md:bg-top">
         <div>        
           <h1
-              class="absolute z-30 text-center left-1/2 transform -translate-x-1/2 text-slate-600 lg:text-4xl font-semibold tracking-wider md:tracking-[.50em] translate-y-4 motion-preset-slide-up-lg">
+              class="absolute z-30 text-center left-1/2 transform -translate-x-1/2 text-white drop-shadow-2xl lg:text-4xl font-semibold tracking-wider md:tracking-[.50em] translate-y-4 motion-preset-slide-up-lg">
               Diaz nugraha
             </h1>
           <!-- side icon -->
@@ -89,13 +89,13 @@
         <div class="hidden lg:flex relative items-center justify-center max-h-screen min-h-screen overflow-hidden">
           <div class="grid grid-cols-3">
             <div class="">
-              <img src="https://i.ibb.co.com/vzfd395/left.jpg" class="" data-aos="fade-right" data-aos-delay="50" alt="">
+              <img src="https://i.ibb.co.com/vzfd395/left.jpg" class="" data-aos="fade-up-right" data-aos-delay="50" alt="">
             </div>
             <div class="transform rotate-3 scale-125">
               <img src="https://i.ibb.co.com/4YCyKNB/middle.jpg" class="" data-aos="fade-down" data-aos-delay="50" alt="">
             </div>
             <div class="">
-              <img src="https://i.ibb.co.com/7JVMVgP/huohuo-58.jpg" class="" data-aos="fade-left" data-aos-delay="50" alt="">
+              <img src="https://i.ibb.co.com/7JVMVgP/huohuo-58.jpg" class="" data-aos="fade-up-left" data-aos-delay="50" alt="">
             </div>
           </div>        
         </div>
@@ -109,11 +109,11 @@
 
       <!-- section about start -->
       <section id="about" class="bg-black mt-10" data-aos="fade-left" data-aos-delay="100">        
-        <div class="p-4 z-10 min-h-96">
+        <div class="relative group p-4 z-10 min-h-96 max-w-sm mx-auto">
           <img
             src="https://i.ibb.co.com/x2vkfWB/diaz.jpg"
             alt="diaz"
-            class="mt-10 max-w-64 mx-auto shadow-xl border-2 border-solid border-white rounded-2xl"
+            class="max-w-64 mx-auto shadow-xl rounded-md transition-opacity duration-300 group-hover:opacity-0 pointer-events-none"
           />
         </div>
           <div
@@ -130,17 +130,13 @@
           </div>                                    
           <!-- <div class="h-1 w-full bg-white mx-auto"></div>                   -->
 
-        <div class="p-6 my-12 z-10">
-          <div class="flex flex-wrap justify-center">
+        <div class="p-6 my-12 z-10 flex flex-wrap justify-center" data-aos="fade-left" data-aos-delay="100">
             <!-- Image Card -->
-            <div
-              id="intro-container"
-              class="flex flex-wrap justify-center gap-4 md:gap-12"
-              data-aos="fade-left"
-              data-aos-delay="100"
-            >
-            </div>                      
-          </div>
+               <div
+                 id="intro-container"
+                 class="flex flex-wrap justify-center gap-4 md:gap-12"                 
+               >
+               </div>                      
         </div>
       </div>
       </section>
@@ -172,16 +168,16 @@
       <!-- Photo gallery section End -->
 
       <!-- recent work section start -->
-       <section id="recent">
-        <div class="min-h-lvh pt-4 pb-8 px-8">
+       <section id="recent" class="min-h-lvh">
+        <div class="pt-4 px-8">
           <div class="hero__text text-2xl lg:text-4xl items-center text-center">
             <h1 class="text-white mb-5">Recent Works</h1>
           </div>
 
-          <div class="pt-6 flex flex-wrap items-center justify-center">
-            <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+          <div class="py-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-10 lg:gap-16">
               
-              <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="relative max-w-sm rounded overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-110">
                 <img class="w-full" src="https://i.ibb.co.com/hyZM856/Topaz-52.jpg" alt="recent">
                 <div class="absolute inset-0 flex items-end justify-start">
                   <span class="bg-black bg-opacity-50 text-white text-xl font-bold px-3 py-2 w-full">
@@ -192,7 +188,7 @@
                 </div>
               </div>
     
-              <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="relative max-w-sm rounded overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-110">
                 <img class="w-full" src="https://i.ibb.co.com/SVKCCWx/Tenten-19.jpg" alt="recent">
                 <div class="absolute inset-0 flex items-end justify-start">
                   <span class="bg-black bg-opacity-50 text-white text-xl font-bold px-3 py-2 w-full">
@@ -203,7 +199,7 @@
                 </div>
               </div>
     
-              <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="relative max-w-sm rounded overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-110">
                 <img class="w-full" src="https://i.ibb.co.com/RDsfLKX/huohuo-15.jpg" alt="recent">
                 <div class="absolute inset-0 flex items-end justify-start">
                   <span class="bg-black bg-opacity-50 text-white text-xl font-bold px-3 py-2 w-full">
@@ -222,7 +218,7 @@
     
       <!-- Footer Section Start -->
        <section id="Footer">
-         <div class="px-6 py-4 h-[60px] bg-gradient-to-t from-primary to-black ">
+         <div class="px-6 pt-6 h-[60px] bg-gradient-to-t from-primary to-black ">
             <div
               class="font-secondary text-center text-sm font-light text-white mb-2"
             >
