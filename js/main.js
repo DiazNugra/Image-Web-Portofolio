@@ -16,7 +16,7 @@ introGallery.forEach(url => {
     const img = document.createElement('img');
     img.src = url;
     img.alt = 'intro-image';
-    img.className = "w-48 lg:w-72 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-125 pointer-events-none";
+    img.className = "w-48 lg:w-72 rounded-lg shadow-lg transform transition-transform duration-300 pointer-events-none";
     
     div.appendChild(img);
     container.appendChild(div);
