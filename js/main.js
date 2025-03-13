@@ -2,12 +2,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const introGallery = [
         "https://i.ibb.co.com/dpHcvLn/rem-13.jpg",
-        "https://i.ibb.co.com/dkGWmCh/nero-8.jpg",
+        "https://i.ibb.co.com/B5nCysK7/8.jpg",
         "https://i.ibb.co.com/1MMkPfz/belle-3.jpg",
-        "https://i.ibb.co.com/grpnNkL/kobo-11.jpg"
+        "https://i.ibb.co.com/dkGWmCh/nero-8.jpg",
     ];
 
-const container = document.getElementById('intro-container');
+const container = document.getElementById('intro_container');
 
 introGallery.forEach(url => {
     const div = document.createElement("div");
@@ -16,7 +16,7 @@ introGallery.forEach(url => {
     const img = document.createElement('img');
     img.src = url;
     img.alt = 'intro-image';
-    img.className = "w-48 lg:w-72 rounded-lg shadow-lg transform transition-transform duration-300 pointer-events-none";
+    img.className = "w-64 lg:w-72 rounded-lg shadow-lg transform transition-transform duration-300 pointer-events-none";
     
     div.appendChild(img);
     container.appendChild(div);
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "https://i.ibb.co.com/BK9Wm60/violet-2-dreamy.png"
     ];
 
-const container = document.getElementById('image-container');
+const container = document.getElementById('image_container');
 
 mainGallery.forEach(url => {
     const img = document.createElement('img');

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     'index.html',
     './js/main.js',
+    './src/input.css',
   ],
   theme: {
     container: {
